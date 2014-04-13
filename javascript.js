@@ -46,7 +46,9 @@ person1.friends.push("Van")
 alert(person1.friends); // Shelby, Court, Van
 alert(person2.friends); //Shelby, Court
 */
+
 //==============================================================
+// ==============================================================
 
 // Durable Constructor Pattern
 // Used in secure environment, instance methods on created object don't refer to THIS and constructor not called using NEW
@@ -64,4 +66,12 @@ function Person(name, age, job) {
 }
 
 var friend = Person("Nicholas", 29, "Software Engineer");
-friend.sayName();
+//friend.sayName();
+
+
+alert(instance instanceof Object);      //true
+alert(instance instanceof SuperType);   //true
+alert(instance instanceof SubType);     //true
+
+// ==============================================================
+// ==============================================================
