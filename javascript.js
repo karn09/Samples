@@ -50,18 +50,25 @@ person1.friends.push("Van")
 alert(person1.friends); // Shelby, Court, Van
 alert(person2.friends); //Shelby, Court
 */
+
 //==============================================================
+// ==============================================================
 
 
 // Durable Constructor Pattern
 // Used in secure environment, instance methods on created object don't refer to THIS and constructor not called using NEW
+<<<<<<< HEAD
 /*
 function Person(name, age, job){
+=======
+
+function Person(name, age, job) {
+>>>>>>> b72abfe9dcc542aa02c5b098c6ac62f94e78b289
     //create object to return
     var o = new Object();
     // optional, define private variables/functions here
     //attach methods
-    o.sayName = function(){
+    o.sayName = function () {
         alert(name);
     };
     //return object
@@ -69,6 +76,7 @@ function Person(name, age, job){
 }
 
 var friend = Person("Nicholas", 29, "Software Engineer");
+<<<<<<< HEAD
 friend.sayName();
 */
 //=======================================================================
@@ -99,3 +107,14 @@ var instance = new SubType();
 alert(instance.getSuperValue()); //true
 
 
+=======
+//friend.sayName();
+
+
+alert(instance instanceof Object);      //true
+alert(instance instanceof SuperType);   //true
+alert(instance instanceof SubType);     //true
+
+// ==============================================================
+// ==============================================================
+>>>>>>> b72abfe9dcc542aa02c5b098c6ac62f94e78b289
