@@ -51,12 +51,12 @@ alert(person2.friends); //Shelby, Court
 // Durable Constructor Pattern
 // Used in secure environment, instance methods on created object don't refer to THIS and constructor not called using NEW
 
-function Person(name, age, job){
+function Person(name, age, job) {
     //create object to return
     var o = new Object();
     // optional, define private variables/functions here
     //attach methods
-    o.sayName = function(){
+    o.sayName = function () {
         alert(name);
     };
     //return object
